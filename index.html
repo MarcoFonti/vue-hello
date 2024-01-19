@@ -10,6 +10,10 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    
+    <!-- DIV PER UTILIZZARE VUE -->
+    <div id="root">
+        <h1>{{message}}</h1>
+        <img :src="image" :alt="alt_image" style="width: 40px;">
+    </div>
 </body>
 </html>
