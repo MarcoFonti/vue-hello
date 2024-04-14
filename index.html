@@ -10,9 +10,11 @@
     <script defer src="js/script.js"></script>
 </head>
 <body>
-    <!-- DIV PER UTILIZZARE VUE -->
+    <!-- ID CHE SI UTILIZZA NEL METODO MOUNT -->
     <div id="root">
+        <!-- TESTO DINAMICO -->
         <h1>{{message}}</h1>
+        <!-- IMMAGINE DINAMICA -->
         <img :src="image" :alt="alt_image" style="width: 40px;">
     </div>
 </body>

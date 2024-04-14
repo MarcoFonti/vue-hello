@@ -10,13 +10,20 @@ console.log('Vue OK', Vue);
 5- INVOCO IL METODO MOUNT PER COLLEGARE IL MIO ID CREATO SU HTML
 */
 
-// ESTRAPOLO FUNZIONE DA VUE
-const {createApp} = Vue;
 
-// CREO VARIBILE E RICHIAMO LA FUNZIONE
-const app = createApp ({
+/* ESTRAPOLO FUNZIONE DA VUE */
+const { createApp } = Vue;
+
+/* CREO VARIBILE E RICHIAMO LA FUNZIONE */
+const app = createApp({
+
+
+    /* NOME PAGINA */
     name: 'MiaApp',
-    // USO DATA CON ALL'INTENRO IL RETURN 
+
+
+
+    /* USO LA FUNZIONE DATA IN MODO DA RESTITUIRE I DATI DINAMICI CON CUI POSSO INTERAGIRE CON HTML */
     data() {
         return {
             message: 'Ciao Vue',
@@ -26,5 +33,6 @@ const app = createApp ({
     }
 })
 
-// COLLEGO ID 
+
+/* COLLEGO ID HTML */
 app.mount('#root');
